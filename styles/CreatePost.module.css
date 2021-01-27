@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 .container {
     box-shadow: 0 0 4px #00000069;
     position: fixed;
@@ -10,8 +12,68 @@
     margin: auto;
     border-radius: 15px;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 70px;
     z-index: 1;
+    color: #535353;
+}
+
+.closeButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 30px;
+    color: #2b44ff;
+    border: none;
+    background-color: transparent;
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+
+.closeIcon {
+    width: 20px;
+}
+
+.sectionTitle {
+    color: #2B44FF;
+    text-align: start;
+    margin-top: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input, .textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #c9c9c9;
+    color: #535353;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.textarea {
+    font-size: 13px;
+    resize: none;
+    height: 100%;
+}
+
+.label {
+    padding-bottom: 5px;
+}
+
+.submit {
+    color: #ffffff;
+    background-color: #2b44ff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .bgfade {

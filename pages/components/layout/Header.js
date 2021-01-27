@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import OutsideClickandler from 'react-outside-click-handler';
-
+import CreatePost from '../posts/CreatePost'
 import Dropdown from '../layout/Dropdown';
 import style from '../../../styles/Header.module.css';
 
@@ -38,6 +38,16 @@ function Header() {
         display: searchVisible?"block":"none"
     }
 
+    const [postVisible, setPostVisible] = useState(false);
+
+    const postStyle = {
+        display: postVisible?"block":"none"
+    }
+
+    function togglePost() {
+        setPostVisible(!postVisible);
+    }
+
     return (
         <header className={style.header}>
             <Link href="/">
@@ -67,7 +77,7 @@ function Header() {
                     </OutsideClickandler>
                 </div>
 
-                <button className={style.clearButton}>
+                <button className={style.clearButton} onClick={togglePost}>
                     <img id={style.addIcon} src="/assets/Plus.svg" alt="Add Post"></img>
                 </button>
 
@@ -81,6 +91,10 @@ function Header() {
                 </OutsideClickandler>
                 </div>
             </span>
+
+            <OutsideClickandler onOutsideClick={() => {setPostVisible(false)}}>
+            <CreatePost style={postStyle} function={"Create"}/>
+            </OutsideClickandler>
         </header>
     );
 }

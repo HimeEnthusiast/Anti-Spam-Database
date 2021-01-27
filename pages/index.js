@@ -1,11 +1,18 @@
 import PostCard from "../pages/components/posts/PostCard"
 import CreatePost from '../pages/components/posts/CreatePost'
 import style from "../styles/Home.module.css"
+import { useState } from 'react';
 
 export default function Home() {
+    const [visible, setVisible] = useState(false);
+
+    const postStyle = {
+        display: visible?"block":"none"
+    }
+
     return (
         <div className={style.root}>
-            <CreatePost/>
+            {/* <CreatePost style={postStyle} function={"Create"}/> */}
 
             <div className={style.recentSection}>
                 <h1 className={style.sectionTitle}>
