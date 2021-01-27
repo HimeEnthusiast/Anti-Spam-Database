@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+.header {
+    background-color: #2B44FF;
+    padding: 10px;
+    display: flex;
+}
+
+.clearButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.clearButton:hover {
+    cursor: pointer;
+}
+
+.logo {
+    width: 35px;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.search {
+    display: inline-block;
+    position: relative;
+    padding-top: 3px;
+}
+
+#searchInput {
+    width: 250px;
+    border-radius: 7px;
+    padding: 8px;
+    padding-right: 30px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#searchArrowButton {
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+
+#searchArrowIcon {
+    width: 30px;
+    padding: 11px 8px 8px 8px;
+}
+
+.account {
+    margin: auto 0 auto auto;
+    display: flex;
+}
+
+.notifDiv {
+    position: relative;
+}
+
+#notifIcon {
+    height: 25px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+}
+
+#addIcon {
+    height: 22px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+}
+
+#userIcon {
+    width: 30px;
+    padding-right: 5px;
+}
+
+#userDownIcon {
+    width: 12px;
+    padding-bottom: 10px;
+}

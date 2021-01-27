@@ -1,0 +1,28 @@
+.container {
+    position: absolute;
+    min-width: 150px;
+    filter: drop-shadow(0 0 4px #00000069);
+}
+
+.box {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    margin: 0 25px 0 auto;
+}
+
+.menuItem {
+    white-space: nowrap;
+}

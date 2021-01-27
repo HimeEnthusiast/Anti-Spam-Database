@@ -1,0 +1,56 @@
+.root {
+    width: 95%;
+    min-height: 180px;
+    box-shadow: 0 0 4px #00000069;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: start;
+    color: #535353;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.byline {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.description {
+    padding: 15px 0 10px 0;
+}
+
+.buttonLine {
+    display: flex;
+}
+
+.clearButton {
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px 0 10px;
+}
+
+.clearButton:hover {
+    cursor: pointer;
+}
+
+.icon {
+    fill: red;
+    height: 22px;
+}
+
+#thumbUpIcon {
+    fill: blueviolet;
+}
+
+#commentButton {
+    margin: 0 0 0 auto;
+}
+
+.numValue {
+    vertical-align: text-top;
+    line-height: 10px;
+    padding: 0 0 0 10px;
+}
