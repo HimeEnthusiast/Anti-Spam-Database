@@ -20,5 +20,5 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 50px;
     padding-top: 30px;
-    z-index: -2;
+    z-index: 0;
 }

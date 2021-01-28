@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+
 .container {
     box-shadow: 0 0 4px #00000069;
     position: fixed;
-    width: 50%;
+    width: 750px;
     height: 550px;
     top: 0;
     bottom: 0;
@@ -12,9 +13,13 @@
     margin: auto;
     border-radius: 15px;
     background-color: #ffffff;
-    padding: 70px;
+    padding-top: 25px;
     z-index: 1;
     color: #535353;
+}
+
+.innerContainer {
+    padding: 45px 60px 0 70px;
 }
 
 .closeButton {
@@ -84,4 +89,43 @@
     left: 0;
     top: 0;
     z-index: -1;
+}
+
+.buttonLine {
+    display: flex;
+    padding-top: 10px;
+}
+
+.clearButton {
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px 0 10px;
+}
+
+.clearButton:hover {
+    cursor: pointer;
+}
+
+.icon {
+    fill: red;
+    height: 22px;
+}
+
+#thumbUpIcon {
+    fill: blueviolet;
+}
+
+.numValue {
+    vertical-align: text-top;
+    line-height: 10px;
+    padding: 0 0 0 10px;
+}
+
+.commentSection {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.ruleLine {
+    margin: 10px 0 15px 0;
 }

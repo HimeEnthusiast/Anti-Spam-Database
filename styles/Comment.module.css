@@ -1,0 +1,43 @@
+.userTitle {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.comment {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.buttonLine {
+    display: flex;
+}
+
+.clearButton {
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px 0 10px;
+}
+
+.clearButton:hover {
+    cursor: pointer;
+}
+
+.icon {
+    fill: red;
+    height: 17px;
+}
+
+#thumbUpIcon {
+    fill: blueviolet;
+}
+
+.numValue {
+    vertical-align: text-top;
+    line-height: 10px;
+    padding: 0 0 0 10px;
+}
+
+.ruleLine {
+    border: 1px solid #00000028;
+    margin: 15px 0 15px 0;
+}

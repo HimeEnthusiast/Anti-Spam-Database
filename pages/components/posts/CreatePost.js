@@ -16,7 +16,7 @@ export default function CreatePost(props) {
                 <input className={style.input} type="text" name="title" placeholder="The phone number that called you."></input>
 
                 <label className={style.label} htmlFor="description">Description</label>
-                <textarea className={style.textarea} name="description" placeholder="Write a description of what happened when this number called you."></textarea>
+                <textarea className={style.textarea} rows="7" name="description" placeholder="Write a description of what happened when this number called you."></textarea>
                 
                 <input className={style.submit} type="submit" value="Submit"></input>
             </form>

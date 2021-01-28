@@ -1,19 +1,35 @@
+import Post from '../posts/Post'
+import { useState } from 'react';
+import OutsideClickandler from 'react-outside-click-handler';
 import style from "../../../styles/PostCard.module.css"
 
-function PostCard() {
+export default function PostCard() {
+    const [visible, setVisible] = useState(false);
+
+    const postStyle = {
+        display: visible?"block":"none"
+    }
+
     return (
         <div className={style.root}>
-            <div className={style.title}>
-                Number
-            </div>
+            <OutsideClickandler onOutsideClick={() => setVisible(false)}>
+                <Post style={postStyle}></Post>
+            </OutsideClickandler>
+                <div className={style.bgfade} style={postStyle}></div>
 
-            <div className={style.byline}>
-                By User
-            </div>
+            <button className={style.postButton} onClick={() => setVisible(true)}>
+                <div className={style.title}>
+                    Number
+                </div>
 
-            <div className={style.description}>
-                Ullamco enim laborum excepteur qui magna commodo veniam do incididunt ad adipisicing. Eiusmod excepteur amet elit adipisicing exercitation deserunt anim aliqua nulla culpa. Consectetur reprehenderit duis enim laboris ea pariatur esse veniam velit aliqua duis.
-            </div>
+                <div className={style.byline}>
+                    By User
+                </div>
+
+                <div className={style.description}>
+                    Ullamco enim laborum excepteur qui magna commodo veniam do incididunt ad adipisicing. Eiusmod excepteur amet elit adipisicing exercitation deserunt anim aliqua nulla culpa. Consectetur reprehenderit duis enim laboris ea pariatur esse veniam velit aliqua duis.
+                </div>
+            </button>
 
             <div className={style.buttonLine}>
                 <button className={style.clearButton}>
@@ -34,5 +50,3 @@ function PostCard() {
         </div>
     )
 }
-
-export default PostCard;
