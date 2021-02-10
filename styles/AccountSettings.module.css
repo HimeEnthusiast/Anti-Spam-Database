@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.root {
+    padding-top: 20px;
+    width: 50%;
+}
+
+.title {
+    color: #2B44FF;
+    margin: 10px 0 50px 0;
+}
+
+.setting {
+    padding-bottom: 10px;
+}
+
+.settingsData {
+    margin: auto 0 auto 0;
+}
+
+.innerDiv {
+    display: flex;
+}
+
+.changeButton {
+    border: 1px solid #2B44FF;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 8px 35px 8px 35px;
+    margin-left: auto;
+    color: #2B44FF;
+    font-weight: 600;
+}
+
+.changeButton:hover {
+    color: #ffffff;
+    background-color: #2B44FF;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.ruleLine {
+    margin-top: 30px;
+    border: 1px solid #00000028;
+}

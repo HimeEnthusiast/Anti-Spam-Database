@@ -1,0 +1,23 @@
+.root {
+    padding: 50px 100px 50px 100px;
+}
+
+.selectionBar {
+    width: 50%;
+}
+
+.selectionButton {
+    border: none;
+    background: transparent;
+    padding: 0 30px 10px 20px;
+}
+
+.selectionButton:hover {
+    /* color: #2B44FF; */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ruleLine {
+    border: 2px solid #2B44FF;
+}
